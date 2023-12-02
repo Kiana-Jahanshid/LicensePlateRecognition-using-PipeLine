@@ -2,7 +2,9 @@
 
 
 # Description :
-![](assets/capture.JPG)
+<p float="center">
+    <img src  = "assets/Capture.JPG" width=600 /> 
+</p>
 
 # How to install :
 ```
@@ -23,16 +25,16 @@ python deep_text_recognition_benchmark/DTRB_OO.py
 
 # Results :
 
-+ trained weights :
++ trained weights : <br/>
+
 YOLO detector : <br/>
-```
+
 https://drive.google.com/file/d/1ki7GNd_3zJ8bUIEBBc8tkyiVvMEJZsvs/view?usp=drive_link
 
-```
 DTRB recognizer : <br/>
-```
+
 https://drive.google.com/file/d/1CI6C9ButxSbk8FdWLCwl-70z63sRLci6/view?usp=drive_link
-```
+
 
 
 
