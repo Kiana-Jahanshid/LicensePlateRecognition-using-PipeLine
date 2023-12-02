@@ -1,0 +1,57 @@
+--------------------------------------------------------------------------------
+image_path               	predicted_labels         	confidence score
+--------------------------------------------------------------------------------
+io/input_plates\1.jpg    	63m45154                 	0.2162
+io/input_plates\2.jpg    	33t83622                 	0.9728
+io/input_plates\3.jpg    	11a1211                  	0.0982
+io/input_plates\4.jpg    	56e88644                 	0.9854
+io/input_plates\5.jpg    	44b12135                 	0.9877
+io/input_plates\6.jpg    	21a43728                 	0.0579
+io/input_plates\7.jpg    	21a43513                 	0.2187
+io/input_plates\8.jpg    	88e32768                 	0.9881
+--------------------------------------------------------------------------------
+image_path               	predicted_labels         	confidence score
+--------------------------------------------------------------------------------
+io/input_plates/1.jpg    	63m45154                 	0.2162
+io/input_plates/2.jpg    	33t83622                 	0.9728
+io/input_plates/3.jpg    	11a1211                  	0.0982
+io/input_plates/4.jpg    	56e88644                 	0.9854
+io/input_plates/5.jpg    	44b12135                 	0.9877
+io/input_plates/6.jpg    	21a43728                 	0.0579
+io/input_plates/7.jpg    	21a43513                 	0.2187
+io/input_plates/8.jpg    	88e32768                 	0.9881
+--------------------------------------------------------------------------------
+image_path               	predicted_labels         	confidence score
+--------------------------------------------------------------------------------
+deep_text_recognition_benchmark/demo_image/demo_1.png	16a18                    	0.2287
+deep_text_recognition_benchmark/demo_image/demo_2.jpg	61a28988                 	0.0270
+deep_text_recognition_benchmark/demo_image/demo_3.png	61                       	0.3055
+deep_text_recognition_benchmark/demo_image/demo_4.png	48e88                    	0.0183
+deep_text_recognition_benchmark/demo_image/demo_5.png	18                       	0.4310
+deep_text_recognition_benchmark/demo_image/demo_6.png	71                       	0.4703
+deep_text_recognition_benchmark/demo_image/demo_7.png	13310                    	0.0623
+deep_text_recognition_benchmark/demo_image/demo_8.jpg	68                       	0.5211
+deep_text_recognition_benchmark/demo_image/demo_9.jpg	1bb9891                  	0.0238
+deep_text_recognition_benchmark/demo_image/demo_10.jpg	644                      	0.0948
+--------------------------------------------------------------------------------
+image_path               	predicted_labels         	confidence score
+--------------------------------------------------------------------------------
+io/input_plates\1.jpg    	63m45154                 	0.2162
+io/input_plates\2.jpg    	33t83622                 	0.9728
+io/input_plates\3.jpg    	11a1211                  	0.0982
+io/input_plates\4.jpg    	56e88644                 	0.9854
+io/input_plates\5.jpg    	44b12135                 	0.9877
+io/input_plates\6.jpg    	21a43728                 	0.0579
+io/input_plates\7.jpg    	21a43513                 	0.2187
+io/input_plates\8.jpg    	88e32768                 	0.9881
+--------------------------------------------------------------------------------
+image_path               	predicted_labels         	confidence score
+--------------------------------------------------------------------------------
+io/input_plates\1.jpg    	63m45154                 	0.2162
+io/input_plates\2.jpg    	33t83622                 	0.9728
+io/input_plates\3.jpg    	11a1211                  	0.0982
+io/input_plates\4.jpg    	56e88644                 	0.9854
+io/input_plates\5.jpg    	44b12135                 	0.9877
+io/input_plates\6.jpg    	21a43728                 	0.0579
+io/input_plates\7.jpg    	21a43513                 	0.2187
+io/input_plates\8.jpg    	88e32768                 	0.9881
