@@ -1,4 +1,4 @@
-# OCR with pipeline and Object Oriented DTRB:
+# LicensePlateRecognition with pipeline and Object Oriented DTRB:
 
 
 # Description :
