@@ -6,7 +6,7 @@ Here, in second part ,  we want to **connect** plate_detector & plate_recognizer
 it means that the output of the DETECTOR should be use as input of the RECOGNIZER . 
 
 <p float="center">
-    <img src  = "assets/capture.JPG" width=600 /> 
+    <img src  = "assets/Capture.JPG" width=600 /> 
 </p>
 
 here , we want license plates which have over %80 confidence . <br/>
