@@ -17,17 +17,18 @@ for i in range(len(result.boxes.xyxy)) :
     if result.boxes.conf[i] > 0.5 :
         bounding_box = result.boxes.xyxy[i]
         print(bounding_box)
-        # first we have to convert TENSOR to numpy aray and then use it
-        bounding_box = bounding_box.cpu().detach().numpy().astype(int) # now bounding_box is numpy array
+        # first we have to convert TENSOR to numpy array and then use it :
+        bounding_box = bounding_box.cpu().detach().numpy().astype(int) # now bounding_box is a numpy array
         print("numpy array : " , bounding_box)
         cropped_plate_img = image[bounding_box[1]:bounding_box[3]  ,  bounding_box[0]:bounding_box[2]].copy()
-        cropped_plate_img = cv2.resize(cropped_plate_img , (100,32)) ## refer to line 120 in DTRB_OO.py
+        cropped_plate_img = cv2.resize(cropped_plate_img , (100,32)) ## refer to line 120 in DTRB_OO_v2.py
         cv2.imwrite(f"io/output/x_cropped{i}.jpg" , cropped_plate_img)
         cropped_plate_img = cv2.cvtColor(cropped_plate_img , cv2.COLOR_BGR2GRAY)
         cv2.rectangle(image , (bounding_box[0],bounding_box[1]) , (bounding_box[2] , bounding_box[3]) , (0,255,0) , 4)
         plate_recognizer.predict(cropped_plate_img)
 
 cv2.imwrite("io/output/x.jpg" , image)
+ 
  
 '''''
 if we had segmentation problem : masks = value - except None
@@ -43,7 +44,6 @@ now we have object detection , therefore boxes variable gets value : ultralytics
 ما در فایل مین پلاک کراپ شده رو داریم به متد پردیکت میدیم که از جنس نامپای ارری هست 
 اما توی متد پردیکت تصویر رو به شکل تنسور از ما میخواد 
 پس باید تصویر نامپای شده رو دوباره برگردونیم به تنسور !!!!
-
 
 '''''
 

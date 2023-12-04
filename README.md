@@ -1,4 +1,4 @@
-# LicensePlateRecognition with pipeline and Object Oriented DTRB:
+# License Plate Recognition with pipeline and Object Oriented DTRB:
 
 
 # Description :
