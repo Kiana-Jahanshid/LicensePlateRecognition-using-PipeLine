@@ -1,4 +1,5 @@
-# License Plate Recognition with pipeline and Object Oriented DTRB:
+# License Plate Detection + Recognition + Verification : 
+using pipeline method and Object Oriented DTRB
 
 
 # Description :
@@ -20,30 +21,49 @@ we are going to use [deep-text-recognition-benchmark](https://github.com/clovaai
 pip install -r requirements.txt
 ```
 # How to run :
++ run this command for detection and recognition task for just one image at a time : <br/>
 ```
 python main.py --Transformation TPS --FeatureExtraction ResNet --SequenceModeling BiLSTM --Prediction Attn 
 ```
+----------------------------------------------------------------
 
++ run this command for detect and recognize all test images , and store them into database :
+```
+python detection_recognition_preparedata_for_DB.py --Transformation TPS --FeatureExtraction ResNet --SequenceModeling BiLSTM --Prediction Attn
+```
+----------------------------------------------------------------
 
-# Results :
++ ###  Run this command to verify your input license plate :
+```
+python verification.py --Transformation TPS --FeatureExtraction ResNet --SequenceModeling BiLSTM --Prediction Attn --input_images io/input/14.jpg
+```
 
-+ trained weights : <br/>
+--------------------------------------------
+<br/>
 
-YOLO detector : <br/>
+###  Download pre-trained weights : <br/>
+
++ YOLO detector : <br/>
 
 https://drive.google.com/file/d/1ki7GNd_3zJ8bUIEBBc8tkyiVvMEJZsvs/view?usp=drive_link
 
-DTRB recognizer : <br/>
++ DTRB recognizer : <br/>
 
 https://drive.google.com/file/d/1CI6C9ButxSbk8FdWLCwl-70z63sRLci6/view?usp=drive_link
 
+then put these files into their related folder , in weights folder .
 
+Also , you can change value of threshold using : --threshold < argument value >
+
+
+# Results :
 <br/>
 
 ### Detected plates :
-![](io/output/x.jpg "1") 
+![](io/output/x15.jpg "1") 
 
 |    Ground Truth  | predicted_labels | confidence score |
 |:-------------------------------------:| :-------------------------------------:| :-------------------------------------:|
 | ![](io/output/x_cropped0.jpg "1") | 89q56966 | 0.9922
-| ![](io/output/x_cropped1.jpg "1") | 34b29850 | 0.9906
+| ![](io/output/x_cropped.jpg "1") | 34b29850 | 0.9906
+

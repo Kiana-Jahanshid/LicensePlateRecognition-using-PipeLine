@@ -3,7 +3,7 @@ from ultralytics import YOLO
 from deep_text_recognition_benchmark.DTRB_OO_v2 import DTRB
 
 
-image = cv2.imread("io/input/IMG_20231106_094735_edit_67582532917291_jpg.rf.9e782866d67e44883b2bc68d30524f66.jpg")
+image = cv2.imread("io/input/13.jpg")
 #DETECTION module
 plate_detector = YOLO("weights/YOLOv8-Detector/YOLOv8n_license_plate_detector_best_weight.pt")
 #RECOGNITION module
@@ -14,7 +14,7 @@ result = result[0]
 
 # draw a green rectangle around license plate
 for i in range(len(result.boxes.xyxy)) :
-    if result.boxes.conf[i] > 0.5 :
+    if result.boxes.conf[i] > 0.8 :
         bounding_box = result.boxes.xyxy[i]
         print(bounding_box)
         # first we have to convert TENSOR to numpy array and then use it :
